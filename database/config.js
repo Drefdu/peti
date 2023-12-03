@@ -1,12 +1,11 @@
 const mongoose = require ('mongoose');
-const mongoUri = process.env.MONGO_URI;
+MONGODB_CNN = 'mongodb+srv://daniela:danielaruiz@cluster1.8zhrttp.mongodb.net/?retryWrites=true&w=majority';
 const dbConnection = async () => {
     try {
-        await mongoose.connect('mongodb+srv://vercel-admin-user:ZSYdFJd8lqC1JCzC@cluster0.otzdkns.mongodb.net/')
+        await mongoose.connect(MONGODB_CNN)
         console.log('Base de datos online :)')
     } catch (error) {
         console.log(error)  
-        mongoose.disconnect();
         throw new Error('Error al iniciar la base de datos')
     }
 };
