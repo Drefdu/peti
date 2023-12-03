@@ -1,5 +1,5 @@
 const mongoose = require ('mongoose');
-MONGODB_CNN = 'mongodb+srv://daniela:danielaruiz@cluster1.8zhrttp.mongodb.net/?retryWrites=true&w=majority';
+MONGODB_CNN = 'mongodb+srv://vercel-admin-user:ZSYdFJd8lqC1JCzC@cluster0.otzdkns.mongodb.net/';
 const dbConnection = async () => {
     try {
         await mongoose.connect(MONGODB_CNN)
