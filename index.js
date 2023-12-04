@@ -4,7 +4,7 @@ const { dbConnection } = require('./database/config');
 const app = express();
 app.use(express.json());
 
-dbConnection();
+//dbConnection();
 
 app.get('/', function(req, res) {
     res.send({Autora: "Autora: Daniela Karina Ruiz Hernández"});
