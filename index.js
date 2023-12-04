@@ -1,7 +1,11 @@
 const express = require("express");
 const cors = require('cors');
 const app = express();
+const { connectToDatabase } = require('./database/conexion');
 app.use(express.json());
+
+const db = connectToDatabase();
+
 
 app.get('/', function(req, res) {
     res.send({Autora: "Autora: Daniela Karina Ruiz Hernández"});
